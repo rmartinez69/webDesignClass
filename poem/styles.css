@@ -1,0 +1,71 @@
+h1{
+    color:red;
+    font-size: 65px;
+    background-color: rgba(255, 255, 0, 0.764);
+    margin: 50px 0 30px 20px; /*top right bottom left */
+    padding: 10px 20px 30px 40px;
+    
+}
+
+h2{
+    color:rgb(81, 81, 194);
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(165, 86, 165, 0.692);
+    margin: 100px;
+    padding: 20px;
+}
+
+
+p {
+    color:darkmagenta;
+    font-size: 32px;
+    text-align: justify;
+    background-color: rgba(228, 107, 107, 0.336);
+    margin: 100px;
+    padding: 20px;
+
+    line-height: 2; /*this is spacing*/
+
+
+}
+
+body{
+    background-color: rgba(234, 119, 80, 0.852);
+    background-image: url(images/pinksky.jpg);
+    background-size: 500px 500px;
+    
+}
+
+b{
+
+    text-transform: uppercase;
+    color: yellow;
+    background-color: cornflowerblue;
+}
+
+.first{
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+.second{
+    font-size: 45px;
+    background-color: rgba(16, 16, 187, 0.601);
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}  
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
