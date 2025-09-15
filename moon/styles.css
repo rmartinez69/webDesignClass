@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/*this is for the body of the webpage*/
+body{
+    background-color: lightblue;
+    color: white;
+}
+
+/*fonts, always remove uniquifier and adjust the sizing, get rid of the brackets sometimes*/
+.ibm-plex-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+}
+
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+li{
+    display: inline-block;
+    background-color: rgba(255, 255, 0, 0.695);
+    padding: 20px;
+    margin:10px;
+
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#opener{
+    background-image: url(images/stars.jpg);
+    background-size: cover;
+}
+
+.redmoon{
+    background-image: url(images/moon-red.png);
+    width: 600px;
+    height: 600px;
+    background-size: contain;
+}
+
+
+/*facts section with the flexsquare*/ 
+
+.flex-area{
+    display: flex; /*this always goes in the parent class*/
+    flex-direction: row;
+    justify-content: center; /*align items horizontally*/
+    align-items: center; /*align items vertically*/
+}
+
+.flex-column{
+    width: 30%;
+    margin: 20px 50px;
+    
+}
+
+#facts{
+    background-image: url(images/galaxy.jpg);
+    height: 100vh; 
+    width:100% ;
+    background-size: cover;
+    background-position: bottom;
+}
+
+h4{
+    font-size: 24px;
+    margin: 10px;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+iframe{
+    margin: 100px 50px;
+}
+
+#videos{
+    background-color: black;  
+}
+
+
+
+
