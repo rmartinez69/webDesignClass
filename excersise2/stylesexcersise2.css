@@ -1,0 +1,64 @@
+h1{
+    color:red;
+    text-align: center;
+    font-size: 65px;
+    background-color: rgba(215, 215, 20, 0.667);
+    margin: 30px 30 30px 30px; /*top right bottom left */
+    padding: 40px;
+    
+}
+
+h2{
+    color:rgb(81, 81, 194);
+    font-size: 40px;
+    
+    text-align: center;
+    background-color: rgba(165, 86, 165, 0.692);
+    margin: 50px;
+    padding: 20px;
+}
+
+
+p {
+    color:darkmagenta;
+    font-size: 32px;
+    text-align: left;
+    background-color: rgba(228, 107, 107, 0.336);
+    margin: 100px;
+    padding: 20px;
+    line-height: 1.5; /*this is spacing*/
+
+
+}
+
+body{
+    background-color: white;
+        
+}
+
+b{
+ 
+    color: rgb(255, 85, 0);
+}
+
+
+.libertinus-keyboard-regular {
+  font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libertinus-sans-regular {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.borel-regular {
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
