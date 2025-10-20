@@ -1,0 +1,221 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/*body */
+body { background-color: #f4efe6; color: #222; }
+
+html { scroll-behavior: smooth; }
+
+/*fonts stuff */
+.ibm-plex-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*header */
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  color: #222;
+  border-bottom: 1px solid #ccc;
+}
+h1 { font-size: 50px; margin: 20px 0 0 0; }
+
+li {
+  display: inline-block;
+  background-color: #f2cc8f;
+  padding: 20px;
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 8px;
+}
+li a { color: #222; text-decoration: none; }
+
+/* quote */
+#opener {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 200px;
+}
+.quote { max-width: 700px; }
+#opener h2 { font-size: 28px; color: #111; line-height: 1.6; }
+#opener h3 { margin-top: 20px; color: #555; }
+#opener a { color: #7a3e3e; text-decoration: none; }
+#opener a:hover { text-decoration: underline; }
+
+/*facts */
+#facts {
+  background-color: #faf7f2;
+  padding: 80px 20px;
+}
+
+.facts-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.facts-title h2 {
+  font-size: 36px;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*flex container */
+.flex-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.flex-column {
+  width: 28%;
+  min-width: 250px;
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*favorite books */
+#favoritebooks {
+  background-color: #000;
+  padding: 50px 0; 
+}
+
+#favoritebooks h2 {
+  font-size: 36px;
+  color: #f4efe6;
+  margin-bottom: 25px; 
+}
+
+/*layout */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  row-gap: 30px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.parent * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: black;
+}
+
+
+#favoritebooks .parent > div {
+  flex-direction: column;
+  padding: 12px;
+  will-change: transform;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#favoritebooks .parent > div p {
+  display: block;
+  text-align: center;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  width: 85%;
+  max-width: 420px;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+#favoritebooks .parent > div p small {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9em;
+  color: #f0f0f0;
+  text-align: left;
+}
+
+/*book covers */
+.div2::before,
+.div3::before,
+.div4::before,
+.div5::before,
+.div6::before {
+  content: "";
+  display: block;
+  width: min(180px, 70%);
+  aspect-ratio: 2 / 3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/*book cover images */
+.div2::before { background-image: url("images/farenheit.jpg"); }
+.div3::before { background-image: url("images/dune.jpg"); }
+.div4::before { background-image: url("images/dimequiensoy.jpeg"); }
+.div5::before { background-image: url("images/eitheror.jpg"); }
+.div6::before { background-image: url("images/secrethistory.jpg"); }
+
+/*hover bookshelf animation */
+#favoritebooks .parent > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+  z-index: 10;
+}
+
+#favoritebooks .parent > div:hover::before {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.2);
+}
+
+
+/*poem */
+#poem {
+  background-color: #fff; color: #111;
+  width: 100%; min-height: 100px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden; padding: 60px 20px;
+}
+#poem h2 { font-size: 42px; margin-bottom: 10px; }
+#poem h3 { font-size: 16px; margin-bottom: 20px; color: #555; }
+#poem p {
+  font-size: 20px; line-height: 2; color: #333;
+  max-width: 800px; text-align: left;
+}
+
+
