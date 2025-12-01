@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>In a Dark, Dark Room</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+
+    <header class="top">
+      <div class="size-box">
+        <span id="dims">— × —</span>
+      </div>
+      <div class="top-label">
+        Resize the browser window to follow the story.
+      </div>
+    </header>
+
+    <div class="scene"></div>
+
+    <section class="story-wrapper">
+      <p class="story story--step1">
+        <span class="story-title">In a Dark, Dark Room</span><br>
+        by Alvin Schwartz.
+      </p>
+
+      <p class="story story--step2">
+        In a dark, dark wood, there was a dark, dark house.
+      </p>
+
+      <p class="story story--step3">
+        And in that dark, dark house, there was a dark, dark room.
+      </p>
+
+      <p class="story story--step4">
+        And in that dark, dark room there was a dark, dark chest.
+      </p>
+
+      <p class="story story--step5">
+        And in that dark, dark chest, there is a dark dark box.
+      </p>
+
+      <p class="story story--step6">
+        And in that dark, dark box... there was a...
+      </p>
+    </section>
+
+    <p class="hint hint--step1">come here...</p>
+    <p class="hint hint--step2">come here...</p>
+    <p class="hint hint--step3">psst, come here...</p>
+    <p class="hint hint--step4">psst, get closer...</p>
+    <p class="hint hint--step5">psst, you're almost there...</p>
+
+  </main>
+
+  <script>
+    function updateDims() {
+      const el = document.getElementById("dims");
+      if (!el) return;
+      el.textContent = window.innerWidth + " × " + window.innerHeight;
+    }
+    window.addEventListener("load", updateDims);
+    window.addEventListener("resize", updateDims);
+  </script>
+</body>
+</html>
+
